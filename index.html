@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock</title>
+
+  <!-- Font Awesome Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Include Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Main wrapper -->
+  <div class="wrapper">
+    <!-- Timer display -->
+    <div class="timer-display">00:00:00</div>
+
+    <!-- Container for inputs, button, and active alarms -->
+    <div class="container">
+      <!-- Inputs for setting alarm time -->
+      <div class="inputs">
+        <input type="number" id="hourInput" placeholder="00" min="0" max="23">
+        <input type="number" id="minuteInput" placeholder="00" min="0" max="59">
+      </div>
+
+      <!-- Button to add alarm -->
+      <button id="set">Add Alarm</button>
+
+      <!-- Placeholder for displaying active alarms -->
+      <div class="activeAlarms"></div>
+    </div>
+  </div>
+
+  <!-- Include JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
